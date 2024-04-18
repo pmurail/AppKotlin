@@ -20,8 +20,8 @@ class FirstFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
@@ -33,6 +33,7 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFirst.setOnClickListener {
+//          startActivityForResult(Intent(MediaStore.ACTION_IMAGE_CAPTURE), 123)
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }
