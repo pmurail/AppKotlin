@@ -37,7 +37,7 @@ class SecondFragment : Fragment() {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
 
-        val newActivity = Intent(requireActivity(), MainActivity2::class.java)
+        val newActivity = Intent(requireActivity(), MainActivity3::class.java)
         binding.buttonThird.setOnClickListener {
             startActivity(newActivity)
         }
