@@ -15,12 +15,17 @@
         android:theme="@style/Theme.AppKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity3"
+            android:name=".PokemonDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppKotlin" />
+        <activity
+            android:name=".DetailActivity"
             android:exported="false" />
 
         <service
             android:name=".BeersService"
-            android:exported="false"></service>
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
